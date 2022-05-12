@@ -1,0 +1,248 @@
+.headerShopee{
+    background-image: linear-gradient( to top, #F6422D, #FD6132);;
+}
+
+.myNavbar{
+    padding: 0;
+}
+
+.nav-item a{
+    color: white ;
+    font-size: 13px;
+}
+
+.nav-item a:hover{
+    color: #ccc;
+}
+
+.navHover:hover .imgHover{
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+.imgHover{
+    display: none;
+}
+
+.navConnect{
+    color: white !important;
+}
+
+.iconItem{
+    cursor: pointer;
+}
+
+.navHover{
+    position: relative;
+}
+
+.navHover:hover .itemHover{
+    display: block;
+}
+
+.imgHover2{
+    height: 100px;
+    width: 100px;
+    transform: translateX(120%) translateY(50%);
+    position: absolute; 
+    
+}
+
+
+
+.itemHover{
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    display: none;
+    animation: noticeHover ease-in 0.5s;
+    transform-origin: right top;
+    transform: translateX(-70%);
+    z-index: 99;
+}
+
+@keyframes noticeHover {
+    from {
+        scale: 0;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.btnItem{
+    position: absolute;
+    bottom: 0;
+    /* border: 0.5px solid white; */
+}
+
+.logoShopee img{
+    width: 200px;
+}
+
+.itemHeader{
+    border: 0;
+}
+
+.searchShopee{
+    max-width: 840px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.btnSearch{
+    color:white;
+    background-color: #F6422D;
+    width: 60px;
+}
+
+.btnSearch:hover {
+    background-color: #FD6132;
+    color: white;
+}
+
+.logoCart{
+    color: white;
+    font-size: 26px;
+    animation: noticeHover ease-in 0.5s;
+    transform-origin: right top;
+    transform: translateX(-70%);
+}
+
+.logoCart:hover{
+    color: white;
+}
+
+.cartHover{
+    /* position: relative; */
+}
+
+.cartHover:hover .imgHover3{
+    display: block;
+}
+
+.imgHover3 >img{
+    height: 150px;
+    width: 150px;
+    transform: translateX(80%) translateY(50%);
+}
+
+.imgHover3{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    animation: noticeHover ease-in 0.1s;
+    transform-origin: right top;
+    transform: translateX(-80%);
+}
+
+.btnHover{
+    display: none;
+}
+
+.advHover:hover > .btnHover{
+    display: block;
+    animation: noticeHover ease-in 0.2s;
+}
+
+.advImg > img{
+    width:100%;
+}
+
+.advImg > img:first-child{
+    padding-bottom: 0.5rem;
+}
+
+.btnShopee > .btn{
+    border: 0.5px solid #ccc;
+    border-radius: 0;
+}
+
+.btnShopee a{
+    transition: all 150ms linear 0s;
+}
+
+
+.btnHover > button {
+    margin-left: 0 !important;
+}
+
+
+.ribbon {
+    height: 300px;
+    position: relative;
+    margin-bottom: 30px;
+    background: url(/assets/img/qao1.jpg);
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+    overflow: hidden;
+}
+
+.ribbon1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(45deg) translateX(20%) translateY(-50%);
+    
+}
+
+.ribbon1 span {
+    
+    display: block;
+    text-align: center;
+    background: #f8463f;
+    font-size: 10px;
+    line-height: 1;
+    padding: 12px 8px 10px;
+    width: 120px;
+}
+
+.ribbon3 {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    background: #F6422D;
+}
+
+
+.ribbon3:after,.ribbon3:before {
+    content: "";
+    position: absolute;
+}
+
+.ribbon3:before {
+    height: 0;
+    width: 0;
+    top: -8.5px;
+    left: 0.1px;
+    border-bottom: 9px solid black;
+    border-left: 9px solid transparent;
+}
+
+
+.starIcon > i{
+    color: yellow;
+}
+
+@media screen and (max-width: 600px){
+    .slideShow{
+        margin: 0;
+    }
+    
+    .carouselItem{
+        padding: 0 !important;
+
+    }
+}
